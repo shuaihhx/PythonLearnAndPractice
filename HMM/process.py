@@ -28,8 +28,6 @@ def fileProcess(file):
                 index = word.rfind('/')
                 if index < 1:
                     break
-                if word[:index] == '钟汉良':
-                    print(line)
                 sentence.append(word[:index])
             a = sentenceProcess(sentence)
             fileData.append(a)
